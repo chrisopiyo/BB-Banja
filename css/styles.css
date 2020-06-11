@@ -1,0 +1,260 @@
+* {
+    background: url();
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: #E6E6E6;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    background-color: #555;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  li {
+    display: inline-block;
+    margin-right: 1em;
+    height: 2em;
+    line-height: 2em; 
+    padding: 0 10px;
+  }
+ ul li ul li  {
+     display: none;
+ }
+  .last-li {
+    margin-left: auto;
+  }
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #999;
+}
+  nav a:hover {
+    color: #fff;
+  }
+  nav i {
+    color: #fff;
+  }
+  .search-nav-section {
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+  }
+  .personal-details {
+    background-color: #fff;
+    width: 60%;
+    margin: 90px auto 20px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding-bottom: 30px;
+  }
+  .personal-details h2 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 20px 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+  }
+  .names,
+  .email,
+  .dates,
+  .contacts,
+  .supervisor,
+  .supervisor-role,
+  .other-info,
+  .auto-mobile {
+    display: flex;
+    font-weight: bold;
+    color: #888;
+  }
+
+  .dates {
+    flex-wrap: wrap;
+  }
+
+  .supervisor-role {
+    margin-bottom: 10px;
+    display: flex;
+   
+  }
+
+  .supervisor-role label {
+    display: block;
+    flex: 1;
+  }
+
+  .supervisor-role-input{
+    flex: 2;
+  }
+
+  .supervisor-role-input select {
+    width: 40%;
+  }
+
+  .names input,
+  .email input,
+  .dates input,
+  .contacts input,
+  .supervisor input,
+  .other-info input,
+  .role select {
+    height: 40px;
+    outline: none;
+    background-color: #E6E6E6;
+    border: none;
+    padding: 0 10px;
+    border-radius: 4px;
+    width: 90%;
+  }
+  .names label,
+  .email label,
+  .dates label,
+  .contacts label,
+  .supervisor label,
+  .other-info label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .names span,
+  .dates span,
+  .contacts span,
+  .other-info span {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .names .first-name,
+  .names .last-name,
+  .dates .date-of-birth,
+  .dates .current-date,
+  .contacts .mobile,
+  .contacts .telephone,
+  .other-info .password,
+  .other-info .working-days {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .email .email-input,
+  .supervisor .supervisor-input{
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .email .email-input input,
+  .supervisor .supervisor-input input {
+    width: 60%;
+  }
+  button {
+    display: block;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  .buttons-section {
+    display: flex;
+    justify-content: center;
+  }
+  .buttons-section .register {
+    background-color: #59B359;
+  }
+  .buttons-section .cancel {
+    background-color: #777;
+  }
+  .register:hover, .cancel:hover {
+    cursor: pointer;
+  }
+  footer {
+    background-color: #555;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+  
+ .auto-mobile {
+   margin: 10px;
+ }
+
+.email-invalid {
+  border: 1px solid red !important;
+}
+
+.email-valid {
+  border: 1px solid green !important;
+} 
+.firstName-invalid {
+  border: 1px solid red !important;
+}
+
+.firstName-valid {
+  border: 1px solid green !important;
+}
+
+.lasttName-invalid {
+  border: 1px solid red !important;
+}
+
+.lastName-valid {
+  border: 1px solid green !important;
+}
+
+.supervisorsName-invalid {
+  border: 1px solid red !important;
+}
+
+.supervisorsName-valid {
+  border: 1px solid green !important;
+}
+
+/* .mobileNumber-invalid {
+  border: 1px solid red !important;
+}
+
+.mobileNumber-valid {
+  border: 1px solid green !important;
+} */
+
+@media only screen and (max-width: 635px) {
+  .current-date {
+    padding-right: 50px;
+  }
+
+  .current-date input {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .current-date span {
+    margin-left: auto;
+  }
+}
+
+.deactivated {
+  opacity: 0.3;
+}

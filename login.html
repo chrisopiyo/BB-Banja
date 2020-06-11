@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/668d372fa7.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Log in To Boda-Boda Banja</h1>
+        <h2>Don't have an account yet? Go ahead and sign up!</h2>
+
+        <section class="input-fields">
+            <div class="email-section">
+                <label>Email</label>
+                <input type="email" name="Email" id="user_email" oninput="validateLoginEmail();" placeholder="example@gmail.com" class="">
+            </div>
+            <div class="password-section">
+                <label>Password</label>
+                <input type="password" name="Password" id="password">
+            </div>
+            <div>
+                <p class="default" id="error"></p>
+                <div class="sk-chase default" id="spinner">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+            <div class="button-section">
+                <button id="loginExecutive">Log In</button>
+            </div>
+            <p><a href="#">Forgot your password?</a></p>
+            <p>or log in with</p>
+            <div class="social-media">
+                <div class="instagram">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <span>instagram</span>
+                </div>
+                <div class="google">
+                    <i class="fab fa-google-plus fa-2x"></i>
+                    <span>Google</span>
+                </div>
+                <div class="face-book">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <span>Facebook</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="javaScript/login.js"></script>
+    <script>
+        localStorage.removeItem("token")
+    </script>
+</body>
+</html>

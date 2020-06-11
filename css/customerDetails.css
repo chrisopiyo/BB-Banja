@@ -1,0 +1,28 @@
+
+.container {
+    margin-bottom: 60px;
+    }
+    
+    .card-body-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-row: 20px;
+    
+    }
+    
+    .card-body-grid-item {
+        height: 30px;
+        border-bottom: 1px solid #999;
+        padding: 20px 5px;
+        color: #444;
+    }
+    
+    .sample {
+    width: 65%;
+    background-color: lightgray;
+    margin: auto;
+    padding: 20px;
+    }
+    .personal-details h2 {
+        padding: 10px 0 !important;
+    }

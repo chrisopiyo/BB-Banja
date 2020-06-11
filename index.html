@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/668d372fa7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>www.bodabodabanja.com</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="nav-bar-component"></div>
+    <div class="container">
+      <section class="personal-details">
+        <h2>SALES EXECUTIVES REGISTRATION FORM</h2>
+        <div class="names">
+          <label>Name</label>
+          <div class="first-name">
+            <input type="text" id="firstName" oninput="firstNameValidator();" />
+            <span>First Name</span>
+          </div>
+          <div class="last-name">
+            <input type="text" id="lastName" oninput="lastNameValidator();" />
+            <span>Last Name</span>
+          </div>
+        </div>
+        <div class="email">
+          <label>Email</label>
+          <div class="email-input">
+            <input
+              type="email"
+              placeholder="example@email.com"
+              id="email"
+              oninput="validateLoginEmail();"
+            />
+          </div>
+        </div>
+        <div class="dates">
+          <label>Dates</label>
+          <div class="date-of-birth">
+            <input type="date" id="dateOfBirth" />
+            <span>Date of Birth</span>
+          </div>
+          <div class="current-date">
+            <input type="date" id="currentDate" />
+            <span>Current Date</span>
+          </div>
+        </div>
+        <div class="contacts">
+          <label>Contacts</label>
+          <div class="mobile">
+            <input
+              type="number"
+              id="mobileNumber"
+              oninput="mobileNumberValidator();"
+            />
+            <span>Mobile Number</span>
+          </div>
+          <div class="telephone">
+            <input
+              type="number"
+              id="telephoneNumber"
+              oninput="officeNumberValidator();"
+            />
+            <span>Office Contact</span>
+          </div>
+        </div>
+        <div class="supervisor-role supervisor">
+          <label>Executive Role</label>
+          <div class="supervisor-input supervisor-role-input role">
+            <select id="roles" class="role">
+              <option value="0">Ordinary Executive</option>
+              <option value="1">Admin Executive</option>
+            </select>
+          </div>
+        </div>
+        <div class="supervisor">
+          <label>Supervisor</label>
+          <div class="supervisor-input">
+            <input
+              type="text"
+              placeholder="supervisor's name"
+              id="supervisorsName"
+              oninput="supervisorsNameValidator();"
+            />
+          </div>
+        </div>
+        <div class="other-info">
+          <label>other-infos</label>
+          <div class="password">
+            <input
+              type="password"
+              id="password"
+              oninput="passwordValidator();"
+            />
+            <span>Password</span>
+          </div>
+          <div class="working-days">
+            <input type="number" id="workingDays" />
+            <span>Number of working days</span>
+          </div>
+        </div>
+        <div class="buttons-section">
+          <button class="register deactivated" id="register" disabled>
+            REGISTER
+          </button>
+          <button class="cancel">CANCEL</button>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>&copy; copy-right Boda-Boda-Banja 2020</span>
+    </footer>
+    <script src="javaScript/saleManager.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#nav-bar-component").load("navbar.html");
+      });
+    </script>
+  </body>
+</html>
